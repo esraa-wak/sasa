@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<link rel="stylesheet" href="design.css">
+<body>
+    <div>  
+        <ul><li><a href="project.html">HOME</a></li>
+         <li><a href="order.html">Order</a></li> 
+       <li><div class="menu">Products
+           <a href="women.html">Women</a> 
+            <a href="Men.html">Men</a></li>
+                  </div>
+          
+           
+      
+           
+
+    </ul>  </div>
+<br><br><br><br>
+<h1>Fill out the form to order</h1>
+<br>
+
+    <p>Enter your creditcard code : <input type="number" id="phone"></p>
+    <p>Enter your password: <input type="password" id="password"></p>
+<p>Click here to <a href="order2.html" onclick="checkEmpty()">Order</a></p>
+</form>
+
+<script>
+    "use strict";
+   function checkEmpty()
+   {
+        var phone = document.getElementById("phone").value;
+        var passowrd = document.getElementById("password").value;
+        if (phone=== "" || passowrd === ""){
+            alert("You should fill both your creditcard code and the Password textbox");
+        }
+        else {
+            window.open('order2.html');
+        }
+    }
+</script>
+</body>
+</html> 
+
+<style>
+   h1,form,p {
+       text-align: center;
+       font-weight: bold;
+   }
+ 
+</style>
+<br><br><br><br><br><br><br><br><br>
+</div>
+            
+<div class="footer">
+ <h2>Contact Info</h2>
+  <div><p>Email address:21930217@students.liu.edu.lb</p> </div>
+  <div><p> Cell phone: +961 81052315</p></div>
+</div>

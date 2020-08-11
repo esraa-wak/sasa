@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="stylesheet" href="design.css">
+    <body>
+        <div>  
+            <ul><li><a href="project.html">HOME</a></li>
+             <li><a href="order.html">Order</a></li> 
+           <li><div class="menu">Products
+               <a href="women.html">Women</a> 
+                <a href="Men.html">Men</a></li>
+                      </div>
+              
+               
+          
+               
+    
+        </ul>  </div>
+    <br><br><br><br><h1>Select your order</h1>
+	
+
+	
+	
+	
+    <br> <div class="desc"> Men Collection: </div> 
+     The Quantity: <input type="text" id="cost" size=1 value="1">
+    <div > <pre>  Code #     size</pre></div>
+       
+	<input id="checkbox1" type="checkbox">
+	<label for="checkbox1">MN1(75$) 
+
+    </label><select name="Sizes">
+        <option >41</option>
+        <option >42</option>
+        <option >44</option> </select><br>
+      
+    <input id="checkbox2"type="checkbox">
+	<label for="checkbox2">MN2(70$)</label><select name="Sizes">
+        <option >42</option>
+        <option >43</option>
+        <option >44</option>
+    </select> <br>
+	<input id="checkbox3"type="checkbox">
+	<label for="checkbox3">MN3(80$) </label><select name="Sizes">
+        <option >40</option>
+        <option >42</option>
+        <option >43</option>
+    </select><br>
+    <input id="checkbox4"type="checkbox">
+	
+	<label for="checkbox4">MA1(95$) </label> <select name="Sizes">
+        <option >40</option>
+        <option >41</option>
+        <option >42</option>
+    </select>  <br>
+</label>
+<input id="checkbox5"type="checkbox">
+<label for="checkbox5">MA2(105$)</label><select name="Sizes">
+    <option >39</option>
+    <option >40</option>
+    <option >42</option>
+</select> <br>
+<input id="checkbox6"type="checkbox">
+<label for="checkbox6">MA3(115$) </label><select name="Sizes">
+    <option >41</option>
+    <option >42</option>
+    <option >44</option>
+</select> <br>
+<input id="checkbox7"type="checkbox">
+<label for="checkbox7">MS1(90$)</label><select name="Sizes">
+    <option >39</option>
+    <option >40</option>
+    <option >42</option>
+</select> <br>
+<input id="checkbox8"type="checkbox">
+<label for="checkbox8">MS2 (105$)</label><select name="Sizes">
+    <option >40</option>
+    <option >41</option>
+    <option >42</option>
+</select><br>
+<input id="checkbox9"type="checkbox">
+<label for="checkbox9">MS3 (115$)</label><select name="Sizes">
+    <option >39</option>
+    <option >42</option>
+    <option >43</option>
+</select> <br><div class="desc"> Women Collection: </div> <br>
+
+<input id="checkbox10" type="checkbox">
+	<label for="checkbox10">WN1(70$) 
+
+    </label><select name="Sizes">
+        <option >37</option>
+        <option >39</option>
+        <option >40</option> </select><br>
+      
+    <input id="checkbox11"type="checkbox">
+	<label for="checkbox11">WN2(70$)</label><select name="Sizes">
+        <option >38</option>
+        <option >39</option>
+        <option >40</option>
+    </select> <br>
+	<input id="checkbox12"type="checkbox">
+	<label for="checkbox12">WN3(75$) </label><select name="Sizes">
+        <option >36</option>
+        <option >37</option>
+        <option >38</option>
+    </select><br><input id="checkbox13"type="checkbox">
+	<label for="checkbox13">WN4(80$) </label><select name="Sizes">
+        <option >37</option>
+        <option >38</option>
+        <option >39</option>
+    </select><br>
+    <input id="checkbox14"type="checkbox">
+	
+	<label for="checkbox14">WP1(95$) </label> <select name="Sizes">
+        <option >37</option>
+        <option >38</option>
+        <option >40</option>
+    </select>  <br>
+</label>
+<input id="checkbox15"type="checkbox">
+<label for="checkbox15">WP2(100$)</label><select name="Sizes">
+    <option >38</option>
+    <option >39</option>
+    <option >40</option>
+</select> <br>
+<input id="checkbox16"type="checkbox">
+<label for="checkbox16">WP3(115$) </label><select name="Sizes">
+    <option >36</option>
+    <option >37</option>
+    <option >38</option>
+</select> <br>
+<input id="checkbox17"type="checkbox">
+<label for="checkbox17">WS1(90$)</label><select name="Sizes">
+    <option >37</option>
+    <option >38</option>
+    <option >40</option>
+</select> <br>
+<input id="checkbox18"type="checkbox">
+<label for="checkbox18">WS2 (105$)</label><select name="Sizes">
+    <option >38</option>
+    <option >39</option>
+    <option >40</option>
+</select><br>
+<input id="checkbox19"type="checkbox">
+<label for="checkbox19">WS3 (115$)</label><select name="Sizes">
+    <option >36</option>
+    <option >37</option>
+    <option >38</option>
+</select> 
+
+<br>
+<br>
+<button onclick="Calculate()">Cost: </button>  <input id="totalCost" type="text">
+<br>
+<br>
+<br>
+<button onclick="Order()">Order</button>
+
+<script>
+    function Calculate()
+   {
+        var cost = document.getElementById("cost").value;
+        var shoes = 0;
+        if(document.getElementById("checkbox1").checked) shoes+= 75;
+        if(document.getElementById("checkbox2").checked) shoes+= 70;
+        if(document.getElementById("checkbox3").checked) shoes+= 80;
+        if(document.getElementById("checkbox4").checked) shoes+= 95;
+        if(document.getElementById("checkbox5").checked) shoes+= 105;
+        if(document.getElementById("checkbox6").checked) shoes+= 115;
+        if(document.getElementById("checkbox7").checked) shoes+= 90;
+        if(document.getElementById("checkbox8").checked) shoes+= 105;
+        if(document.getElementById("checkbox9").checked) shoes+= 115;
+        if(document.getElementById("checkbox10").checked) shoes+= 70;
+        if(document.getElementById("checkbox11").checked) shoes+= 70;
+        if(document.getElementById("checkbox12").checked) shoes+= 75;
+        if(document.getElementById("checkbox13").checked) shoes+= 80;
+        if(document.getElementById("checkbox14").checked) shoes+= 95;
+        if(document.getElementById("checkbox15").checked) shoes+= 100;
+        if(document.getElementById("checkbox16").checked) shoes+= 115;
+        if(document.getElementById("checkbox17").checked) shoes+= 90;
+        if(document.getElementById("checkbox18").checked) shoes+= 105;
+        if(document.getElementById("checkbox19").checked) shoes+= 115;
+        var total = cost * shoes;
+        document.getElementById("totalCost").value = total;
+    }
+    
+    function Order()
+   {
+        var cost = document.getElementById("cost").value;
+        var shoes = 0;
+        var h = 0;
+        if(document.getElementById("checkbox1").checked) {shoes+= 75;h++}
+        if(document.getElementById("checkbox2").checked) {shoes+= 70;h++}
+        if(document.getElementById("checkbox3").checked) {shoes+= 80;h++}
+        if(document.getElementById("checkbox4").checked) {shoes+= 95;h++}
+        if(document.getElementById("checkbox5").checked) {shoes+= 105;h++}
+        if(document.getElementById("checkbox6").checked) {shoes+= 115;h++}
+        if(document.getElementById("checkbox7").checked) {shoes+= 90;h++}
+        if(document.getElementById("checkbox8").checked) {shoes+= 105;h++}
+        if(document.getElementById("checkbox9").checked) {shoes+= 115;h++}
+        if(document.getElementById("checkbox10").checked) {shoes+= 70;h++}
+        if(document.getElementById("checkbox11").checked) {shoes+= 70;h++}
+        if(document.getElementById("checkbox12").checked) {shoes+= 75;h++}
+        if(document.getElementById("checkbox13").checked) {shoes+= 80;h++}
+        if(document.getElementById("checkbox14").checked) {shoes+= 95;h++}
+        if(document.getElementById("checkbox15").checked){shoes+= 100;h++}
+        if(document.getElementById("checkbox16").checked) {shoes+= 115;h++}
+        if(document.getElementById("checkbox17").checked) {shoes+= 90;h++}
+        if(document.getElementById("checkbox18").checked) {shoes+= 105;h++}
+        if(document.getElementById("checkbox19").checked) {shoes+= 115;h++}
+        
+        var total = cost * shoes;
+        alert("You have ordered " + h + " shoeses  you have to pay $" + total+",we will contact you later");
+    }
+</script>
+
+</body>
+</html>
